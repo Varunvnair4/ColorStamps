@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WaD-GR-cJp">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorStamps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-gC-gs8">
+                                <rect key="frame" x="0.0" y="732" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4X-zV-tOg">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfn-yF-LCm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-a0-8XR">
+                                        <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thW-ct-oLR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-Gl-ua9">
+                                        <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaJ-K3-Fgr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-Cs-u6K">
+                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="colorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSg-92-OQk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="haZ-mb-Jwj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZFL-gC-gs8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LoQ-zk-8Sj"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFL-gC-gs8" secondAttribute="bottom" id="Yhf-KL-w1d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZFL-gC-gs8" secondAttribute="trailing" id="hhV-QZ-k0m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R9C-yK-8aV">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="fi5-oF-ExI">
+                            <connections>
+                                <action selector="refreshAction:" destination="BYZ-38-t0r" id="rhe-QU-tnt"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="undo" id="jCm-zQ-UNh">
+                                <connections>
+                                    <action selector="undoButtonAction:" destination="BYZ-38-t0r" id="zRm-Vf-bHM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="redo" id="8hp-Gr-m8m">
+                                <connections>
+                                    <action selector="redoButtonActionWithSender:" destination="BYZ-38-t0r" id="zl7-A8-SMR"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnRedo" destination="8hp-Gr-m8m" id="3iJ-Uw-8gz"/>
+                        <outlet property="btnUndo" destination="jCm-zQ-UNh" id="Lv8-eW-lG7"/>
+                        <outletCollection property="colorButtons" destination="h4X-zV-tOg" collectionClass="NSMutableArray" id="RiB-ND-SuT"/>
+                        <outletCollection property="colorButtons" destination="3vR-a0-8XR" collectionClass="NSMutableArray" id="ICy-8q-gpp"/>
+                        <outletCollection property="colorButtons" destination="59K-Gl-ua9" collectionClass="NSMutableArray" id="RTW-bw-JFQ"/>
+                        <outletCollection property="colorButtons" destination="v1f-Cs-u6K" collectionClass="NSMutableArray" id="BJf-aC-OaP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="3.6945812807881775"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zjJ-KQ-3M6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WaD-GR-cJp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q2h-rh-IOX">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3pN-PF-mx8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpq-K4-1GL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="3.6945812807881775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
