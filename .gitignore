@@ -88,3 +88,8 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+*.pbxproj
+*.xcworkspacedata
+*.plist
+ColorStamps/.DS_Store
+ColorStamps/Assets.xcassets/.DS_Store
